@@ -1,4 +1,5 @@
 package main
+import "github.com/TwiN/go-color"
 
 import "fmt"
 
@@ -16,7 +17,7 @@ func HalfPyrm() {
 	for i := 0; i <= 6; i++ {
 		// fmt.Println(el)
 		for j := 0; j < i ; j++ {
-			fmt.Print(el)
+			print(color.Ize(color.Blue, el))
 
 		}
 		fmt.Println()

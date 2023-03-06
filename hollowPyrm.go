@@ -1,6 +1,7 @@
 package main
 
-import ("fmt")
+import ("fmt"
+ "github.com/TwiN/go-color")
 
 func HolPyr() {
 
@@ -16,7 +17,7 @@ func HolPyr() {
 			if i%2 == 0 {
 				if i == 0 {
 					if j == 2 {
-						fmt.Print(el2)
+						print(color.Ize(color.Green, el2))
 					} else {
 						fmt.Print("   ")
 					}
@@ -25,7 +26,7 @@ func HolPyr() {
 
 				if i == 2 {
 					if j == 1 || j == 3 {
-						fmt.Print(el2)
+						print(color.Ize(color.Green, el2))
 					} else {
 						fmt.Print("   ")
 					}
@@ -33,7 +34,7 @@ func HolPyr() {
 
 				if i == 4 {
 					if j == 0 || j == 4 {
-						fmt.Print(el2)
+						print(color.Ize(color.Green, el2))
 					} else {
 						fmt.Print("   ")
 					}
@@ -42,7 +43,7 @@ func HolPyr() {
 			} else {
 				if i == 1 {
 					if j == 2 || j == 3 {
-						fmt.Print(el)
+						print(color.Ize(color.Green, el))
 					} else {
 						fmt.Print("   ")
 					}
@@ -51,7 +52,7 @@ func HolPyr() {
 
 				if i == 3 {
 					if j == 1 || j == 4 {
-						fmt.Print(el)
+						print(color.Ize(color.Green, el))
 					} else {
 						fmt.Print("   ")
 					}
@@ -59,7 +60,7 @@ func HolPyr() {
 				}
 
 				if i == 5 {
-					fmt.Print(el)
+					print(color.Ize(color.Green, el))
 				}
 			}
 		}
